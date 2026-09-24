@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8efe8" />
+  <meta name="description" content="A little birthday love letter, made especially for you." />
+  <title>For my favorite person · Happy Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="petals" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="monogram" href="#top" aria-label="Back to top">♡</a>
+    <nav aria-label="Main navigation">
+      <a href="#letter">A letter</a>
+      <a href="#memories">Memories</a>
+      <a href="#promise">A promise</a>
+    </nav>
+    <button class="sound-toggle" type="button" aria-pressed="false" aria-label="Toggle ambient music">
+      <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="sound-label">sound off</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> a little something for you</p>
+        <h1>Happy birthday,<br /><em>my love.</em></h1>
+        <p class="hero-intro">For the girl who makes ordinary days feel like golden hour.</p>
+        <a class="button button-dark" href="#letter">Open your letter <span>↓</span></a>
+      </div>
+      <div class="hero-art reveal reveal-delay" aria-label="A warm, romantic photograph placeholder">
+        <div class="sun-disc"></div>
+        <div class="photo-frame">
+          <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=900&q=85" alt="Soft pink flowers in warm sunlight" />
+          <span class="photo-caption">you are my favorite view</span>
+        </div>
+        <div class="scribble scribble-one">all my heart</div>
+        <div class="scribble scribble-two">♡</div>
+      </div>
+      <div class="scroll-note">scroll slowly <span>↓</span></div>
+    </section>
+
+    <section class="countdown-wrap section-shell reveal" aria-labelledby="countdown-title">
+      <div class="section-heading compact">
+        <p class="eyebrow"><span></span> counting down to your day</p>
+        <h2 id="countdown-title">The sweetest day is almost here.</h2>
+      </div>
+      <div class="countdown" aria-live="polite">
+        <div><strong id="days">00</strong><span>days</span></div><b>:</b>
+        <div><strong id="hours">00</strong><span>hours</span></div><b>:</b>
+        <div><strong id="minutes">00</strong><span>minutes</span></div><b>:</b>
+        <div><strong id="seconds">00</strong><span>seconds</span></div>
+      </div>
+      <p class="countdown-note" id="countdown-note">Until we celebrate you properly.</p>
+    </section>
+
+    <section class="letter section-shell" id="letter">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span> a letter for you</p>
+        <h2>In case I don't say it<br /><em>quite enough.</em></h2>
+      </div>
+      <article class="letter-card reveal reveal-delay">
+        <div class="letter-top"><span>To: the birthday girl</span><span>With love, always</span></div>
+        <div class="letter-body">
+          <p class="handwritten">My dearest love,</p>
+          <p>Every year, your birthday gives me another reason to pause and feel grateful that the universe somehow brought you into my life.</p>
+          <p>You are warmth. You are laughter in the kitchen, a hand to hold in the quiet, and the little bit of magic I find in every day. Loving you is my favorite thing I get to do.</p>
+          <p>Today, I hope you feel as cherished, seen, and wonderfully loved as you truly are. I hope this next year brings you the dreams you whisper about—and a thousand beautiful surprises along the way.</p>
+          <p>Happy birthday to my favorite person. I love you more than these words can hold.</p>
+          <p class="handwritten signature">Yours, forever ♡</p>
+        </div>
+        <div class="letter-stamp">with<br />love</div>
+      </article>
+    </section>
+
+    <section class="memories section-shell" id="memories">
+      <div class="section-heading split reveal">
+        <div><p class="eyebrow"><span></span> little things i adore</p><h2>My favorite<br /><em>memories of us.</em></h2></div>
+        <p class="section-aside">The big moments are beautiful, but it's the small ones I keep replaying.</p>
+      </div>
+      <div class="memory-grid">
+        <figure class="memory memory-large reveal"><img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1000&q=85" alt="A couple walking together" /><figcaption><span>01</span> The way you make everywhere feel like home.</figcaption></figure>
+        <figure class="memory memory-small reveal reveal-delay"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=85" alt="Two hands holding a small flower" /><figcaption><span>02</span> Your hand finding mine.</figcaption></figure>
+        <figure class="memory memory-small memory-bottom reveal"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=85" alt="Delicate flowers in a garden" /><figcaption><span>03</span> The joy you bring with you.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="promise section-shell" id="promise">
+      <div class="promise-card reveal">
+        <div class="promise-copy"><p class="eyebrow light"><span></span> one little promise</p><h2>More slow mornings.<br />More dancing.<br /><em>More us.</em></h2><p>I promise to keep choosing you—in the grand adventures and the quiet Tuesdays, in every season still to come.</p></div>
+        <div class="promise-orbit" aria-hidden="true"><span>♡</span><div></div></div>
+      </div>
+    </section>
+
+    <section class="finale section-shell reveal">
+      <p class="eyebrow"><span></span> now make a wish</p>
+      <h2>Here's to you,<br /><em>beautiful girl.</em></h2>
+      <p>May this be your most loved year yet.</p>
+      <button class="button button-outline" id="wish-button" type="button">Make a wish <span>✦</span></button>
+      <p class="wish-message" id="wish-message" role="status">Close your eyes and make it a good one.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>made with all my heart</span><span>♡</span><span>for you, always</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>

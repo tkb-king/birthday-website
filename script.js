@@ -19,12 +19,14 @@ function updateCountdown() {
     countdownNote.textContent = 'Today is all about you. Happy birthday, my love!';
     return;
   }
+
   const seconds = Math.floor(difference / 1000);
   countdownEls.days.textContent = pad(Math.floor(seconds / 86400));
   countdownEls.hours.textContent = pad(Math.floor((seconds % 86400) / 3600));
   countdownEls.minutes.textContent = pad(Math.floor((seconds % 3600) / 60));
   countdownEls.seconds.textContent = pad(seconds % 60);
 }
+
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
@@ -33,6 +35,7 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) entry.target.classList.add('visible');
   });
 }, { threshold: 0.12 });
+
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 
 const petals = document.querySelector('.petals');
@@ -50,6 +53,7 @@ document.querySelector('#wish-button').addEventListener('click', () => {
   const message = document.querySelector('#wish-message');
   message.textContent = 'Wish received. I hope it comes true, beautiful. ✦';
   message.classList.add('visible');
+
   for (let i = 0; i < 16; i += 1) {
     const sparkle = document.createElement('i');
     sparkle.className = 'petal';
